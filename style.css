@@ -1,0 +1,84 @@
+.presentation {
+    display:flex;
+    width: 50%;
+    height: 30%;
+    margin: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .flex-container-sub1 {
+        width: 50%;
+        flex-direction: row;
+    }
+    .flex-container-sub2 {
+        flex-direction: column;
+        width: 25%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0 4px;
+}
+
+.flex-container > * {
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Arial, sans-serif;
+}
+
+.flex-container-sub1 {
+    flex: 50%;
+}
+
+.flex-container-sub2 {
+    flex: 50%;
+    margin-top: 16px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    h2, p, a {
+        text-align: center;
+    }
+    .flex-container-sub1 {
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container-sub2 {
+        width: 66.6%;
+        flex: 100%;
+    }
+}
+
+.button {
+    padding: 15px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #ad4554;
+    border: none;
+    border-radius: 5px;
+}
+
+.picture{
+    max-height: 50%;
+}
