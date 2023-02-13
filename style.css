@@ -97,7 +97,7 @@ h2 {
 }
 
 a:link, a:active, a:visited {
-color: black;
+    color: black;
 }
 
 a:hover {
