@@ -207,6 +207,7 @@ img {
     border: 1px solid white;
     border-radius: 3%;
     margin: 10px;
+    max-width: 100%;
 }
 
 .photo3 {
@@ -227,7 +228,68 @@ img {
     margin: 10px;
 }
 
-.img1:hover {
-    transform: scale(1.1);
-    transition: 1s;
+.photo1:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+
+.photo1:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo2:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo2:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo3:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo3:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo4:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo4:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo5:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo5:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.presentation a {
+    color: black;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.desc {
+    margin-top: 10%;
+}
+
+.my-img:hover ~ a  {
+    color: red;
 }
