@@ -12,6 +12,10 @@ body {
     font-weight: bolder;
 }
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Lato';
     src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPGQ.woff2)  
@@ -20,10 +24,10 @@ body {
     margin: 80px;
     border: 1px solid black;
     background-color: white;
-    position: absolute;
+    position: relative;
     border-radius: 1%;
-    width: 1000px;
-    height: 600px;
+    width: 1100px;
+    height: 550px;
     border-style: none;
     flex-direction: column;
     justify-content: center;
@@ -114,26 +118,116 @@ img {
     height: 100%;
 }
 
-.img1 {
+.checked1 {
     position: relative;
     bottom: 0px;
     right: 20px;
 }
 
-.img2 {
+.checked2 {
     position: relative;
     left: 450px;
     bottom: 45px;
 }
 
-.img3 {
+.checked3 {
     position: relative;
     bottom: 25px;
     right: 20px;
 }
 
-.img4 {
+.checked4 {
     position: relative;
     left: 450px;
     bottom: 75px;
+}
+
+.p1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    bottom: 0;
+    left: 130px;
+}
+
+@media (min-width: 768px) {
+    .lead {
+      font-size: 21px;
+    }
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .dl-horizontal dt {
+      float: left;
+      width: 160px;
+      clear: left;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .dl-horizontal dd {
+      margin-left: 180px;
+    }
+    .container {
+      width: 970px;
+    }
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+.presentation {
+    display:flex;
+    position: absolute;
+    top: 700px;
+    left: 180px;
+    width: 50%;
+    height: 30%;
+    margin: 15px;
+}
+
+.photo1 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo2 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo3 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo4 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo5 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
