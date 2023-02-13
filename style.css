@@ -1,8 +1,7 @@
 .presentation {
-    display:flex;
-    width: 50%;
-    height: 30%;
-    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 * {
@@ -81,4 +80,27 @@ h2 {
 
 .picture{
     max-height: 50%;
+    flex-direction: column;
 }
+
+.Pic{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    flex: 0 0 25%;
+    max-width: 20%;
+    max-height: 5%;
+}
+
+.Pic > * {
+    text-decoration: none;
+}
+
+a:link, a:active, a:visited {
+color: black;
+}
+
+a:hover {
+    color: #ff5248;
+}
+
