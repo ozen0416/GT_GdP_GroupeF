@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Documents individuels/tao/footer.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHLEARN</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="search" id="search">
+            <label for="search" class="searchbtn">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </label>
+            <input type="text" id="login">
+            <label for="text" class="loginbtn">
+                <i class="fa-light fa-circle-user"></i>
+            </label>
+            <label class="logo">PHLEARN</label>
+            <ul>
+                <li><a href="free_tutos.html">Free Tutorials</a></li>
+                <li><a href="#">Pro Tutorials</a></li>
+                <li><a href="#">Preset</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>   
 <div class="main-container">
     <div class="first-layout">
         <div class="flex-container">
@@ -65,4 +90,59 @@
 
 </div>
 </body>
+<footer id="main-footer">
+    <div id="main-div-footer">
+        <h1>PHLEARN</h1>
+        <div class="listFooter">
+            <h2>Products</h2>
+            <ul>
+                <li><a href="#">Join PHLEARN PRO</a></li>
+                <li><a href="#">View All Tutorials</a></li>
+                <li><a href="#">PRO Tutorials</a></li>
+                <li><a href="#">Free Tutorials</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="listFooter">
+            <h2>Learning Paths</h2>
+            <ul>
+                <li><a href="#">Photoshop Path</a></li>
+                <li><a href="#">Lightroom Path</a></li>
+                <li><a href="#">Retouching Path</a></li>
+                <li><a href="#">Compositing Path</a></li>
+            </ul>
+        </div>
+        <div class="listFooter">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Help Docs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="div-area-footer">
+                <label>Keep in touch</label>
+                <input placeholder="Your E-mail Address" type="search" id="search-area-footer" name="search-footer">
+            </div>
+            <div id="connect-div-footer">
+                <h2>connect</h2>
+                <ul id="list-end-div-footer">
+                    <li><a href="facebook.com"><img src="img/footer/facebook.png" id="icon-facebook" class="endIconFooter"></a></li>
+                    <li><a href="twitter.com"><img src="img/footer/twitter.png" id="icon-twitter" class="endIconFooter"></a></li>
+                    <li><a href="instagram.com"><img src="img/footer/instagram.png" id="icon-instagram" class="endIconFooter"></a></li>
+                    <li><a href="youtube.com"><img src="img/footer/youtube.png" id="icon-youtube" class="endIconFooter"></a></li>
+                    <li><a href="pinterest.com"><img src="img/footer/pinterest.png" id="icon-pinterest" class="endIconFooter"></a></li>
+                    <li><a href="linkedin.com"><img src="img/footer/linkedin.png" id="icon-linkedin" class="endIconFooter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p id="policy-footer">All rights reserved 2019, Terms of Service and Privacy Policy</p>
+</footer>
 </html>
