@@ -1,7 +1,9 @@
 .presentation {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 -10px;
+    width: 100%;
 }
 
 * {
@@ -12,22 +14,9 @@ h2 {
     font-weight: normal;
 }
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .flex-container-sub1 {
-        width: 50%;
-        flex-direction: row;
-    }
-    .flex-container-sub2 {
-        flex-direction: column;
-        width: 25%;
-    }
-}
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: start;
     padding: 0 4px;
 }
@@ -35,20 +24,25 @@ h2 {
 .flex-container > * {
     text-align: left;
     font-size: 20px;
-    font-family: Arial, Arial, sans-serif;
+    font-family: Leto, Arial, sans-serif;
 }
 
 .flex-container-sub1 {
     flex: 50%;
 }
 
+.large-img {
+    flex: 100%;
+}
+
 .flex-container-sub2 {
     flex: 50%;
+    max-width: 66.6%;
     margin-top: 16px;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     h2, p, a {
         text-align: center;
     }
@@ -58,14 +52,27 @@ h2 {
         align-items: center;
     }
     .flex-container-sub2 {
-        width: 66.6%;
         flex: 100%;
+        width: 50%;
+    }
+    .Pic {
+        min-width: 40%;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-container {
+        align-items: center;
+    }
+    .flex-container > * {
+        text-align: center;
     }
 }
 
 .button {
     padding: 15px 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Leto, Arial, Helvetica, sans-serif;
     font-style: normal;
     text-decoration: none;
     font-size: 1.6em;
@@ -78,22 +85,30 @@ h2 {
     border-radius: 5px;
 }
 
-.picture{
-    max-height: 50%;
-    flex-direction: column;
-}
-
 .Pic{
     display: flex;
     flex-direction: column;
     padding: 0 10px;
     flex: 0 0 25%;
-    max-width: 20%;
     max-height: 5%;
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+    max-width: 15%;
 }
 
 .Pic > * {
     text-decoration: none;
+}
+
+.Pic:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.Pic:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
 }
 
 a:link, a:active, a:visited {
@@ -104,3 +119,13 @@ a:hover {
     color: #ff5248;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPGQ.woff2)
+}
+
+.my-img {
+    border-radius: 5px;
+    padding-left: 0;
+    width: 100%;
+}
