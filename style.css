@@ -88,6 +88,16 @@ h2 {
     .flex-container > * {
         text-align: center;
     }
+
+    .pre-signup-box {
+        height: 200px;
+    }
+
+    .pre-signup-box > * {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 .main-button {
@@ -98,6 +108,7 @@ h2 {
     letter-spacing: 2px;
     text-decoration: none;
     padding: 2% 4%;
+    margin: 0 2%;
 }
 
 .main-button:hover {
@@ -149,6 +160,10 @@ h2 {
     align-items: center;
 }
 
+.presentation-container > * {
+    padding-bottom: 10px;
+}
+
 .presentation-text {
     width: 100%;
 }
@@ -161,6 +176,11 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.main-container > * {
+    padding-bottom: 4%;
+}
+
 .carousel {
     display: flex;
     flex-direction: column;
@@ -188,4 +208,59 @@ h2 {
 .circle-selected
 {
     background-color: #ff5248;
+}
+
+.second-flex-container {
+    display: flex;
+    background: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.second-flex-container > * {
+    padding: 0 50px;
+}
+
+.second-fc-text-area {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.second-fc-text-area h2 {
+    font-size: 50px;
+}
+
+.second-fc-text-area p {
+    font-size: 21px;
+}
+
+.pre-signup-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.pre-signup-box {
+    background: #f6f7f8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15%;
+    height: 160px;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pre-signup-box > * {
+    padding-left: 50px;
+    padding-right: 50px;
 }
