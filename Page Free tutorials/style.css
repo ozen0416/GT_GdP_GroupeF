@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+}
+
+.section1{
+    height: 110px;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-bottom: 40px;
+    font-family: Lato, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ctn-buttons-s1{
+    height: 20px;
+    width: 50%;
+    text-decoration: none;
+    position: relative;
+    top: 12px;
+    left: 190px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 29px;
+    position: relative;
+    left: 190px;
+    width: 90%;
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.buttons-s1{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+
+.buttons-s1:hover{
+    color: #ff7f77;
+}
+
+.section2{
+    height: 400vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-gauche{
+    height: 348.5%;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: Lato, sans-serif;
+    border-right: 1px solid #ededed ;
+}
+
+.ctn-gauche{
+    width: 60%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25px;
+}
+
+h3{
+    font-size: 17px;
+    color: #515151;
+    position: relative;
+    left: 90px;
+}
+
+.btn-gauche{
+    text-decoration: none;
+    color: #515151;
+    line-height: 30px;
+    font-size: 15px; 
+    position: relative;
+    left: 90px;
+}
+
+.btn-gauche:hover{
+    color: #ff7f77;
+    text-decoration: underline;
+}
+
+
+
+.section-droite{
+    width: 72%;
+    height: 350%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.cadred {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: row;
+    margin-bottom: 80px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    text-decoration: none;
+}
+
+.cadred:hover h4{
+    color: #ff7f77;
+}
+
+.dcube {
+    width: 4%;
+    height: 16%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    right: 30px;
+    font-family: Lato, sans-serif;
+    color: #515151;
+    font-size: 18px;
+}
+
+.cadred2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cadredphoto {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+    transition: all 1s ease;
+}
+
+.cadredtxt {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: #515151;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+h4{
+    font-size: 20px;
+    color: #2c2c2c;
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+}
+
+@media (max-width:1000px){
+    .ctn-buttons-s1{
+        left: 10%;
+        width: 300px;
+    }
+    h1{
+        left: 10%;
+    }
+    .section-gauche{
+        display:none;
+    }
+
+    .section1{
+        height: 150px;
+    }
+
+    .section-droite{
+        width: 100%;
+        height: 175%;
+    }
+    .cadred{
+        left: 0;
+        width: 100%;
+    }
+    .txt-cadred{
+        display: none;
+    }
+    h5{
+        display: none;
+    }
+    .cadredtxt{
+        width: 40%;
+        position: relative;
+        left: 30px;
+    }
+    .cadred{
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    h4{
+        position: relative;
+        top: -20px;
+    }
+    .cadredphoto{
+        position: relative;
+        left: 50px;
+        width: 32%;
+    }
+    .dcube{
+        left: 20px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .underline{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+.c1{
+    background: url("./image/30-Days-of-Photoshop-Coming-Soon\ \(1\).jpg") no-repeat;
+    background-size: contain;
+}
+
+.c2{
+    background: url("./image/Day-1-Tour-of-Photoshop-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c3{
+    background: url("./image/Day-2-Opening-Editing-Saving-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+.c4{
+    background: url("./image/Day-3-Layers-Masks-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c5{
+    background: url("./image/Day-4-Adjustment-Layers-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c6{
+    background: url("./image/Day-5-Selections-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c7{
+    background: url("./image/Day-6-Levels-Curves-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c8{
+    background: url("./image/Day-7-Change-Colors-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c9{
+    background: url("./image/Day-8-Transform-Scale-Rotate-Align-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c10{
+    background: url("./image/Day-9-Brush-Tool-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c11{
+    background: url("./image/Day-10-Cropping-Resizing-Adding-more-space-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c12{
+    background: url("./image/Day-11-Adding-Text-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c13{
+    background: url("./image/Day-12-Liquify-Tool-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c14{
+    background: url("./image/Day-13-Smart-Objects-Thumbnail-360px-1.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c15{
+    background: url("./image/Day-14-Blend-If-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c16{
+    background: url("./image/Day-15-Blend-Modes-thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c17{
+    background: url("./image/Day-16-Remove-Distractions-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c18{
+    background: url("./image/Day-17-Dodge-Burn-Thumbnail-360px-1.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c19{
+    background: url("./image/Day-18-Photo-Collage-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c20{
+    background: url("./image/Day-19-Adobe-Camera-Raw-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c21{
+    background: url("./image/Day-20-Color-Grading-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c22{
+    background: url("./image/Day-21-Change-Color-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c23{
+    background: url("./image/Day-22-Correct-Exposure-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c24{
+    background: url("./image/Day-23-Remove-Blemishes-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c25{
+    background: url("./image/Day-24-Freq-Sep-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c26{
+    background: url("./image/Day-25-Sharpening-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c27{
+    background: url("./image/Day-26-Cut-Anything-Out-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c28{
+    background: url("./image/Day-27-Cut-Out-Hair-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c29{
+    background: url("./image/Day-28-Match-Light-Color-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c30{
+    background: url("./image/Day-29-Editing-Landscapes-ACR-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.c31{
+    background: url("./image/Day-30-Replacing-Sky-Thumbnail-360px.jpg") no-repeat;
+    background-size: contain;
+}
+
+.underline{
+    height: 2px;
+    width: 80%;
+    background-color: #ededed;
+    margin-left: 45px;
+}
+
