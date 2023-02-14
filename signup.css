@@ -10,6 +10,7 @@ body {
     align-self: center;
     font-family: 'Lato';
     font-weight: bolder;
+    position: relative;
 }
 
 a {
