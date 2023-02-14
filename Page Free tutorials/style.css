@@ -25,7 +25,7 @@ header{
     width: 50%;
     text-decoration: none;
     position: relative;
-    top: 12px;
+    top: -5px;
     left: 190px;
 }
 
@@ -214,6 +214,7 @@ h4{
         width: 40%;
         position: relative;
         left: 30px;
+        top: 30px;
     }
     .cadred{
         height: 150px;
